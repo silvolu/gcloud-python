@@ -1,6 +1,8 @@
 Google Cloud Python Client
 ==========================
 
+Changed it for the sake of testing.
+
     Python idiomatic client for Google Cloud Platform services.
 
 |build| |coverage|
