@@ -5,5 +5,6 @@ before_install:
   - export GCLOUD_BRANCH_FOR_LINT="master"
 
 script:
+  - env
   - echo ${TRAVIS_COMMIT_RANGE}
   - false
