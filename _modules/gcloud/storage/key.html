@@ -1,152 +1,167 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>gcloud.storage.key &mdash; gcloud 0.1 documentation</title>
+    <title>gcloud.storage.key &mdash; gcloud 0.02.2 documentation</title>
     
-    <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/main.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/github.min.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '0.1',
+        VERSION:     '0.02.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../../_static/sidebar.js"></script>
-    <link rel="top" title="gcloud 0.1 documentation" href="../../../index.html" />
+    <script type="text/javascript" src="../../../_static/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="top" title="gcloud 0.02.2 documentation" href="../../../index.html" />
     <link rel="up" title="Module code" href="../../index.html" /> 
   </head>
-  <body role="document" class="two-column docs"><a href="https://github.com/GoogleCloudPlatform/gcloud-python"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 999;" src="_static/forkme.png" alt="Fork me on GitHub"></a>
-    <div id="sandbar">
-      <header id="gc-googlebar">
-      <a id="gc-logo" href="../../../index.html">
-        <img src="_static/cloudplatform-horizontal.png" alt="Google">
+  <body>
+    <header class="page-header fixed" role="banner">
+      <h1 class="logo">
+        <a href="index.html" title="back to home">
+          <img src="_static/images/logo.svg" alt="Google Cloud Platform" />
+          <span class="gcloud">gcloud</span>
         </a>
-        <form class="gc-search" action="search.html" method="GET">
-          <div class="searchbox" style="width: 429px;">
-            <span class="button button-blue mini">Google Cloud Python API</span>
-            <input type="hidden" name="check_keywords" value="yes">
-            <input type="hidden" name="area" value="default">
-            <input type="text" name="q" class="q" id="q" value=""
-              placeholder="Search" autocomplete="off" style="width: 263px;">
-          </div>
-          <button class="button button-blue" style="top: 0px; left: 444px;">
-          <img src="_static/search.png" alt="Search">
-        </button>
-
-        <input type="hidden" name="p" id="search_project" value="/compute">
-
-      </form>
-      </header>
-    </div>
+      </h1>
+      <nav class="main-nav">
+        <div class="nav-current">Python</div>
+        <ul class="menu">                    
+          <li>
+            <a href=" 
+https://googlecloudplatform.github.io/gcloud-node" title="Node.js docs page">
+              <img src="_static/images/icon-lang-nodejs.svg" alt="Node.js icon" class="menu-icon" />
+              Node.js
+            </a>
+          </li>
+          <li>
+            <a href="#" title="Python docs page">
+              <img src="_static/images/icon-lang-python.svg" alt="Python icon" class="menu-icon" />
+              Python
+            </a>
+          </li>
+        </ul>
+      </nav><!-- end of .main-nav -->
+    </header><!-- end of .page-header -->
     
-<div id="gc-wrapper">
-  <div id="gc-appbar">
-    <h1><a href="../../../index.html">gcloud 0.1 documentation</a></h1>
-  </div>
-    <div id="gc-main" class="main">
-      <div id="gc-sidebar" class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
+      <article class="main lang-page" role="main">
 
-            <h3>All API Docs</h3>
-            <nav class="gc-toc">
-            <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../common-api.html">Cloud Common</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../datastore-api.html">Cloud Datastore</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../datastore-getting-started.html">Getting started with Cloud Datastore</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../datastore-quickstart.html">Cloud Datastore in 10 seconds</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../getting-started.html">Getting started with gcloud</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../storage-api.html">Cloud Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../storage-getting-started.html">Getting started with Cloud Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../storage-quickstart.html">Cloud Storage in 10 seconds</a></li>
-</ul>
+      <header class="docs-header">
+        <h1 class="page-title">Python</h1>
 
-            </nav>
-            
-            
-        </div>
-      </div>
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main" id="gc-content">
-            
+          <div class="versions">
+            <span class="v-current">0.02.2</span>
+            <!--
+            <a href="versions.html" class="v-btn">
+              <img src="_static/images/icon-arrow-bullet.svg" />
+              See version History
+            </a href="versions.html">
+          </div><!-- end of .versions -->
+      </header>
+                
+      <section class="content">
+        
   <h1>Source code for gcloud.storage.key</h1><div class="highlight"><pre>
 <span class="sd">&quot;&quot;&quot;Create / interact with gcloud storage keys.&quot;&quot;&quot;</span>
 
-<span class="kn">import</span> <span class="nn">errno</span>
+<span class="kn">import</span> <span class="nn">copy</span>
 <span class="kn">import</span> <span class="nn">mimetypes</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">StringIO</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="kn">import</span> <span class="nn">urllib</span>
 
+<span class="kn">from</span> <span class="nn">gcloud.storage._helpers</span> <span class="kn">import</span> <span class="n">_PropertyMixin</span>
+<span class="kn">from</span> <span class="nn">gcloud.storage._helpers</span> <span class="kn">import</span> <span class="n">_scalar_property</span>
 <span class="kn">from</span> <span class="nn">gcloud.storage.acl</span> <span class="kn">import</span> <span class="n">ObjectACL</span>
-<span class="kn">from</span> <span class="nn">gcloud.storage.iterator</span> <span class="kn">import</span> <span class="n">KeyDataIterator</span>
+<span class="kn">from</span> <span class="nn">gcloud.storage.exceptions</span> <span class="kn">import</span> <span class="n">StorageError</span>
 
 
-<div class="viewcode-block" id="Key"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key">[docs]</a><span class="k">class</span> <span class="nc">Key</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="Key"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key">[docs]</a><span class="k">class</span> <span class="nc">Key</span><span class="p">(</span><span class="n">_PropertyMixin</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A wrapper around Cloud Storage&#39;s concept of an ``Object``.&quot;&quot;&quot;</span>
+
+    <span class="n">CUSTOM_PROPERTY_ACCESSORS</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s">&#39;acl&#39;</span><span class="p">:</span> <span class="s">&#39;acl&#39;</span><span class="p">,</span>
+        <span class="s">&#39;cacheControl&#39;</span><span class="p">:</span> <span class="s">&#39;cache_control&#39;</span><span class="p">,</span>
+        <span class="s">&#39;contentDisposition&#39;</span><span class="p">:</span> <span class="s">&#39;content_disposition&#39;</span><span class="p">,</span>
+        <span class="s">&#39;contentEncoding&#39;</span><span class="p">:</span> <span class="s">&#39;content_encoding&#39;</span><span class="p">,</span>
+        <span class="s">&#39;contentLanguage&#39;</span><span class="p">:</span> <span class="s">&#39;content_language&#39;</span><span class="p">,</span>
+        <span class="s">&#39;contentType&#39;</span><span class="p">:</span> <span class="s">&#39;content_type&#39;</span><span class="p">,</span>
+        <span class="s">&#39;componentCount&#39;</span><span class="p">:</span> <span class="s">&#39;component_count&#39;</span><span class="p">,</span>
+        <span class="s">&#39;etag&#39;</span><span class="p">:</span> <span class="s">&#39;etag&#39;</span><span class="p">,</span>
+        <span class="s">&#39;generation&#39;</span><span class="p">:</span> <span class="s">&#39;generation&#39;</span><span class="p">,</span>
+        <span class="s">&#39;id&#39;</span><span class="p">:</span> <span class="s">&#39;id&#39;</span><span class="p">,</span>
+        <span class="s">&#39;mediaLink&#39;</span><span class="p">:</span> <span class="s">&#39;media_link&#39;</span><span class="p">,</span>
+        <span class="s">&#39;metageneration&#39;</span><span class="p">:</span> <span class="s">&#39;metageneration&#39;</span><span class="p">,</span>
+        <span class="s">&#39;name&#39;</span><span class="p">:</span> <span class="s">&#39;name&#39;</span><span class="p">,</span>
+        <span class="s">&#39;owner&#39;</span><span class="p">:</span> <span class="s">&#39;owner&#39;</span><span class="p">,</span>
+        <span class="s">&#39;selfLink&#39;</span><span class="p">:</span> <span class="s">&#39;self_link&#39;</span><span class="p">,</span>
+        <span class="s">&#39;size&#39;</span><span class="p">:</span> <span class="s">&#39;size&#39;</span><span class="p">,</span>
+        <span class="s">&#39;storageClass&#39;</span><span class="p">:</span> <span class="s">&#39;storage_class&#39;</span><span class="p">,</span>
+        <span class="s">&#39;timeDeleted&#39;</span><span class="p">:</span> <span class="s">&#39;time_deleted&#39;</span><span class="p">,</span>
+        <span class="s">&#39;updated&#39;</span><span class="p">:</span> <span class="s">&#39;updated&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="sd">&quot;&quot;&quot;Map field name -&gt; accessor for fields w/ custom accessors.&quot;&quot;&quot;</span>
 
     <span class="n">CHUNK_SIZE</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span>  <span class="c"># 1 MB.</span>
     <span class="sd">&quot;&quot;&quot;The size of a chunk of data whenever iterating (1 MB).</span>
 
-<span class="sd">  This must be a multiple of 256 KB per the API specification.</span>
-<span class="sd">  &quot;&quot;&quot;</span>
+<span class="sd">    This must be a multiple of 256 KB per the API specification.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c"># ACL rules are lazily retrieved.</span>
+    <span class="n">_acl</span> <span class="o">=</span> <span class="bp">None</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bucket</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bucket</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Key constructor.</span>
 
 <span class="sd">        :type bucket: :class:`gcloud.storage.bucket.Bucket`</span>
 <span class="sd">        :param bucket: The bucket to which this key belongs.</span>
 
 <span class="sd">        :type name: string</span>
-<span class="sd">        :param name: The name of the key.</span>
-<span class="sd">                     This corresponds to the unique path of the object</span>
-<span class="sd">                     in the bucket.</span>
+<span class="sd">        :param name: The name of the key.  This corresponds to the</span>
+<span class="sd">                     unique path of the object in the bucket.</span>
 
-<span class="sd">        :type metadata: dict</span>
-<span class="sd">        :param metadata: All the other data provided by Cloud Storage.</span>
+<span class="sd">        :type properties: dict</span>
+<span class="sd">        :param properties: All the other data provided by Cloud Storage.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
+        <span class="nb">super</span><span class="p">(</span><span class="n">Key</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="n">properties</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span> <span class="o">=</span> <span class="n">bucket</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="n">metadata</span> <span class="ow">or</span> <span class="p">{}</span>
 
-        <span class="c"># Lazily get the ACL information.</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">acl</span> <span class="o">=</span> <span class="bp">None</span>
-
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.acl"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.acl">[docs]</a>    <span class="k">def</span> <span class="nf">acl</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create our ACL on demand.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_acl</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_acl</span> <span class="o">=</span> <span class="n">ObjectACL</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_acl</span>
+</div>
     <span class="nd">@classmethod</span>
-<div class="viewcode-block" id="Key.from_dict"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.from_dict">[docs]</a>    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">key_dict</span><span class="p">,</span> <span class="n">bucket</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="Key.from_dict"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.from_dict">[docs]</a>    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">key_dict</span><span class="p">,</span> <span class="n">bucket</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Instantiate a :class:`Key` from data returned by the JSON API.</span>
 
 <span class="sd">        :type key_dict: dict</span>
-<span class="sd">        :param key_dict: A dictionary of data returned from</span>
-<span class="sd">                         getting an Cloud Storage object.</span>
+<span class="sd">        :param key_dict: A dictionary of data returned from getting an</span>
+<span class="sd">                         Cloud Storage object.</span>
 
 <span class="sd">        :type bucket: :class:`gcloud.storage.bucket.Bucket`</span>
-<span class="sd">        :param bucket: The bucket to which this key belongs</span>
-<span class="sd">                       (and by proxy, which connection to use).</span>
+<span class="sd">        :param bucket: The bucket to which this key belongs (and by</span>
+<span class="sd">                       proxy, which connection to use).</span>
 
 <span class="sd">        :rtype: :class:`Key`</span>
 <span class="sd">        :returns: A key based on the data provided.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
-        <span class="k">return</span> <span class="n">cls</span><span class="p">(</span><span class="n">bucket</span><span class="o">=</span><span class="n">bucket</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">key_dict</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">],</span> <span class="n">metadata</span><span class="o">=</span><span class="n">key_dict</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">cls</span><span class="p">(</span><span class="n">bucket</span><span class="o">=</span><span class="n">bucket</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">key_dict</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">],</span> <span class="n">properties</span><span class="o">=</span><span class="n">key_dict</span><span class="p">)</span>
 </div>
-    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c"># pragma NO COVER</span>
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="p">:</span>
             <span class="n">bucket_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="o">.</span><span class="n">name</span>
         <span class="k">else</span><span class="p">:</span>
@@ -155,52 +170,51 @@
         <span class="k">return</span> <span class="s">&#39;&lt;Key: </span><span class="si">%s</span><span class="s">, </span><span class="si">%s</span><span class="s">&gt;&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">bucket_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">connection</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Key.connection"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.connection">[docs]</a>    <span class="k">def</span> <span class="nf">connection</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Getter property for the connection to use with this Key.</span>
 
 <span class="sd">        :rtype: :class:`gcloud.storage.connection.Connection` or None</span>
 <span class="sd">        :returns: The connection to use, or None if no connection is set.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="o">.</span><span class="n">connection</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="o">.</span><span class="n">connection</span>
-
+</div>
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Key.path"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.path">[docs]</a>    <span class="k">def</span> <span class="nf">path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Getter property for the URL path to this Key.</span>
 
 <span class="sd">        :rtype: string</span>
 <span class="sd">        :returns: The URL path to this Key.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Cannot determine path without a bucket defined.&#39;</span><span class="p">)</span>
         <span class="k">elif</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Cannot determine path without a key name.&#39;</span><span class="p">)</span>
 
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="o">.</span><span class="n">path</span> <span class="o">+</span> <span class="s">&#39;/o/&#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
-
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="o">.</span><span class="n">path</span> <span class="o">+</span> <span class="s">&#39;/o/&#39;</span> <span class="o">+</span> <span class="n">urllib</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+</div>
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">public_url</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<div class="viewcode-block" id="Key.public_url"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.public_url">[docs]</a>    <span class="k">def</span> <span class="nf">public_url</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The public URL for this key&#39;s object.</span>
+
 <span class="sd">        :rtype: `string`</span>
 <span class="sd">        :returns: The public URL for this key.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="s">&#39;{storage_base_url}/{self.bucket.name}/{self.name}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="k">return</span> <span class="s">&#39;{storage_base_url}/{bucket_name}/{quoted_name}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
             <span class="n">storage_base_url</span><span class="o">=</span><span class="s">&#39;http://commondatastorage.googleapis.com&#39;</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
-
-<div class="viewcode-block" id="Key.generate_signed_url"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.generate_signed_url">[docs]</a>    <span class="k">def</span> <span class="nf">generate_signed_url</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expiration</span><span class="p">,</span>
-                            <span class="n">method</span><span class="o">=</span><span class="s">&#39;GET&#39;</span><span class="p">):</span>  <span class="c"># pragma NO COVER</span>
+            <span class="n">bucket_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">quoted_name</span><span class="o">=</span><span class="n">urllib</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">))</span>
+</div>
+<div class="viewcode-block" id="Key.generate_signed_url"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.generate_signed_url">[docs]</a>    <span class="k">def</span> <span class="nf">generate_signed_url</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expiration</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s">&#39;GET&#39;</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Generates a signed URL for this key.</span>
 
-<span class="sd">        If you have a key that you want to allow access to</span>
-<span class="sd">        for a set amount of time,</span>
-<span class="sd">        you can use this method to generate a URL</span>
-<span class="sd">        that is only valid within a certain time period.</span>
+<span class="sd">        If you have a key that you want to allow access to for a set</span>
+<span class="sd">        amount of time, you can use this method to generate a URL that</span>
+<span class="sd">        is only valid within a certain time period.</span>
 
-<span class="sd">        This is particularly useful if you don&#39;t want publicly accessible keys,</span>
-<span class="sd">        but don&#39;t want to require users to explicitly log in.</span>
+<span class="sd">        This is particularly useful if you don&#39;t want publicly</span>
+<span class="sd">        accessible keys, but don&#39;t want to require users to explicitly</span>
+<span class="sd">        log in.</span>
 
 <span class="sd">        :type expiration: int, long, datetime.datetime, datetime.timedelta</span>
 <span class="sd">        :param expiration: When the signed URL should expire.</span>
@@ -212,33 +226,31 @@
 <span class="sd">        :returns: A signed URL you can use to access the resource</span>
 <span class="sd">                  until expiration.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="n">resource</span> <span class="o">=</span> <span class="s">&#39;/{self.bucket.name}/{self.name}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">resource</span> <span class="o">=</span> <span class="s">&#39;/{bucket_name}/{quoted_name}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">bucket_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">quoted_name</span><span class="o">=</span><span class="n">urllib</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">))</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">generate_signed_url</span><span class="p">(</span><span class="n">resource</span><span class="o">=</span><span class="n">resource</span><span class="p">,</span>
                                                    <span class="n">expiration</span><span class="o">=</span><span class="n">expiration</span><span class="p">,</span>
                                                    <span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">)</span>
 </div>
-<div class="viewcode-block" id="Key.exists"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.exists">[docs]</a>    <span class="k">def</span> <span class="nf">exists</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Key.exists"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.exists">[docs]</a>    <span class="k">def</span> <span class="nf">exists</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Determines whether or not this key exists.</span>
 
 <span class="sd">        :rtype: bool</span>
 <span class="sd">        :returns: True if the key exists in Cloud Storage.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="o">.</span><span class="n">get_key</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span>
 </div>
-<div class="viewcode-block" id="Key.rename"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.rename">[docs]</a>    <span class="k">def</span> <span class="nf">rename</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">new_name</span><span class="p">):</span>
+<div class="viewcode-block" id="Key.rename"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.rename">[docs]</a>    <span class="k">def</span> <span class="nf">rename</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">new_name</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Renames this key using copy and delete operations.</span>
 
 <span class="sd">        Effectively, copies key to the same bucket with a new name, then</span>
 <span class="sd">        deletes the key.</span>
 
 <span class="sd">        .. warning::</span>
-<span class="sd">          This method will first duplicate the data</span>
-<span class="sd">          and then delete the old key.</span>
-<span class="sd">          This means that with very large objects</span>
-<span class="sd">          renaming could be a very (temporarily) costly</span>
-<span class="sd">          or a very slow operation.</span>
+<span class="sd">          This method will first duplicate the data and then delete the</span>
+<span class="sd">          old key.  This means that with very large objects renaming</span>
+<span class="sd">          could be a very (temporarily) costly or a very slow operation.</span>
 
 <span class="sd">        :type new_name: string</span>
 <span class="sd">        :param new_name: The new name for this key.</span>
@@ -250,61 +262,77 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="o">.</span><span class="n">delete_key</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">new_key</span>
 </div>
-<div class="viewcode-block" id="Key.delete"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.delete">[docs]</a>    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Key.delete"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.delete">[docs]</a>    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Deletes a key from Cloud Storage.</span>
 
 <span class="sd">        :rtype: :class:`Key`</span>
 <span class="sd">        :returns: The key that was just deleted.</span>
+<span class="sd">        :raises: :class:`gcloud.storage.exceptions.NotFound`</span>
+<span class="sd">                 (propagated from</span>
+<span class="sd">                 :meth:`gcloud.storage.bucket.Bucket.delete_key`).</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="o">.</span><span class="n">delete_key</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 </div>
-<div class="viewcode-block" id="Key.get_contents_to_file"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.get_contents_to_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_contents_to_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fh</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Gets the contents of this key to a file-like object.</span>
+<div class="viewcode-block" id="Key.download_to_file"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.download_to_file">[docs]</a>    <span class="k">def</span> <span class="nf">download_to_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_obj</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Download the contents of this key into a file-like object.</span>
 
-<span class="sd">        :type fh: file</span>
-<span class="sd">        :param fh: A file handle to which to write the key&#39;s data.</span>
+<span class="sd">        :type file_obj: file</span>
+<span class="sd">        :param file_obj: A file handle to which to write the key&#39;s data.</span>
 
-<span class="sd">        :raises: :class:`gcloud.storage.exceptions.NotFoundError`</span>
+<span class="sd">        :raises: :class:`gcloud.storage.exceptions.NotFound`</span>
 <span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">_KeyDataIterator</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
 
-        <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">KeyDataIterator</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-            <span class="k">try</span><span class="p">:</span>
-                <span class="n">fh</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
-            <span class="k">except</span> <span class="ne">IOError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>  <span class="c"># pragma NO COVER</span>
-                <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">errno</span> <span class="o">==</span> <span class="n">errno</span><span class="o">.</span><span class="n">ENOSPC</span><span class="p">:</span>
-                    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s">&#39;No space left on device.&#39;</span><span class="p">)</span>
-</div>
-<div class="viewcode-block" id="Key.get_contents_to_filename"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.get_contents_to_filename">[docs]</a>    <span class="k">def</span> <span class="nf">get_contents_to_filename</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get the contents of this key to a file by name.</span>
+    <span class="c"># NOTE: Alias for boto-like API.</span></div>
+    <span class="n">get_contents_to_file</span> <span class="o">=</span> <span class="n">download_to_file</span>
+
+<div class="viewcode-block" id="Key.download_to_filename"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.download_to_filename">[docs]</a>    <span class="k">def</span> <span class="nf">download_to_filename</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Download the contents of this key into a named file.</span>
 
 <span class="sd">        :type filename: string</span>
 <span class="sd">        :param filename: A filename to be passed to ``open``.</span>
 
-<span class="sd">        :raises: :class:`gcloud.storage.exceptions.NotFoundError`</span>
+<span class="sd">        :raises: :class:`gcloud.storage.exceptions.NotFound`</span>
 <span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">download_to_file</span><span class="p">(</span><span class="n">file_obj</span><span class="p">)</span>
 
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">get_contents_to_file</span><span class="p">(</span><span class="n">fh</span><span class="p">)</span>
-</div>
-<div class="viewcode-block" id="Key.get_contents_as_string"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.get_contents_as_string">[docs]</a>    <span class="k">def</span> <span class="nf">get_contents_as_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Gets the data stored on this Key as a string.</span>
+    <span class="c"># NOTE: Alias for boto-like API.</span></div>
+    <span class="n">get_contents_to_filename</span> <span class="o">=</span> <span class="n">download_to_filename</span>
+
+<div class="viewcode-block" id="Key.download_as_string"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.download_as_string">[docs]</a>    <span class="k">def</span> <span class="nf">download_as_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Download the contents of this key as a string.</span>
 
 <span class="sd">        :rtype: string</span>
 <span class="sd">        :returns: The data stored in this key.</span>
-<span class="sd">        :raises: :class:`gcloud.storage.exceptions.NotFoundError`</span>
+<span class="sd">        :raises: :class:`gcloud.storage.exceptions.NotFound`</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
         <span class="n">string_buffer</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">get_contents_to_file</span><span class="p">(</span><span class="n">string_buffer</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">download_to_file</span><span class="p">(</span><span class="n">string_buffer</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">string_buffer</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
-</div>
-<div class="viewcode-block" id="Key.set_contents_from_file"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.set_contents_from_file">[docs]</a>    <span class="k">def</span> <span class="nf">set_contents_from_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fh</span><span class="p">,</span> <span class="n">rewind</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
-                               <span class="n">content_type</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set the contents of this key to the contents of a file handle.</span>
 
-<span class="sd">        :type fh: file</span>
-<span class="sd">        :param fh: A file handle open for reading.</span>
+    <span class="c"># NOTE: Alias for boto-like API.</span></div>
+    <span class="n">get_contents_as_string</span> <span class="o">=</span> <span class="n">download_as_string</span>
+
+<div class="viewcode-block" id="Key.upload_from_file"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.upload_from_file">[docs]</a>    <span class="k">def</span> <span class="nf">upload_from_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_obj</span><span class="p">,</span> <span class="n">rewind</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+                         <span class="n">content_type</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Upload the contents of this key from a file-like object.</span>
+
+<span class="sd">        .. note::</span>
+
+<span class="sd">           The effect of uploading to an existing key depends on the</span>
+<span class="sd">           &quot;versioning&quot; and &quot;lifecycle&quot; policies defined on the key&#39;s</span>
+<span class="sd">           bucket.  In the absence of those policies, upload will</span>
+<span class="sd">           overwrite any existing contents.</span>
+
+<span class="sd">           See the `object versioning</span>
+<span class="sd">           &lt;https://cloud.google.com/storage/docs/object-versioning&gt;`_ and</span>
+<span class="sd">           `lifecycle &lt;https://cloud.google.com/storage/docs/lifecycle&gt;`_</span>
+<span class="sd">           API documents for details.</span>
+
+<span class="sd">        :type file_obj: file</span>
+<span class="sd">        :param file_obj: A file handle open for reading.</span>
 
 <span class="sd">        :type rewind: bool</span>
 <span class="sd">        :param rewind: If True, seek to the beginning of the file handle before</span>
@@ -315,13 +343,12 @@
 <span class="sd">                     If not provided, we&#39;ll try to guess the size using</span>
 <span class="sd">                     :func:`os.fstat`</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
         <span class="c"># Rewind the file if desired.</span>
         <span class="k">if</span> <span class="n">rewind</span><span class="p">:</span>
-            <span class="n">fh</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">SEEK_SET</span><span class="p">)</span>
+            <span class="n">file_obj</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">SEEK_SET</span><span class="p">)</span>
 
         <span class="c"># Get the basic stats about the file.</span>
-        <span class="n">total_bytes</span> <span class="o">=</span> <span class="n">size</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">fstat</span><span class="p">(</span><span class="n">fh</span><span class="o">.</span><span class="n">fileno</span><span class="p">())</span><span class="o">.</span><span class="n">st_size</span>
+        <span class="n">total_bytes</span> <span class="o">=</span> <span class="n">size</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">fstat</span><span class="p">(</span><span class="n">file_obj</span><span class="o">.</span><span class="n">fileno</span><span class="p">())</span><span class="o">.</span><span class="n">st_size</span>
         <span class="n">bytes_uploaded</span> <span class="o">=</span> <span class="mi">0</span>
 
         <span class="c"># Set up a resumable upload session.</span>
@@ -330,12 +357,17 @@
             <span class="s">&#39;X-Upload-Content-Length&#39;</span><span class="p">:</span> <span class="n">total_bytes</span><span class="p">,</span>
         <span class="p">}</span>
 
+        <span class="n">query_params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s">&#39;uploadType&#39;</span><span class="p">:</span> <span class="s">&#39;resumable&#39;</span><span class="p">,</span>
+            <span class="s">&#39;name&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+        <span class="p">}</span>
+
         <span class="n">upload_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">build_api_url</span><span class="p">(</span>
             <span class="n">path</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">bucket</span><span class="o">.</span><span class="n">path</span> <span class="o">+</span> <span class="s">&#39;/o&#39;</span><span class="p">,</span>
-            <span class="n">query_params</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;uploadType&#39;</span><span class="p">:</span> <span class="s">&#39;resumable&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">},</span>
+            <span class="n">query_params</span><span class="o">=</span><span class="n">query_params</span><span class="p">,</span>
             <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">API_BASE_URL</span> <span class="o">+</span> <span class="s">&#39;/upload&#39;</span><span class="p">)</span>
 
-        <span class="n">response</span><span class="p">,</span> <span class="n">content</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">make_request</span><span class="p">(</span>
+        <span class="n">response</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">make_request</span><span class="p">(</span>
             <span class="n">method</span><span class="o">=</span><span class="s">&#39;POST&#39;</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">upload_url</span><span class="p">,</span>
             <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 
@@ -344,7 +376,7 @@
 
         <span class="k">while</span> <span class="n">bytes_uploaded</span> <span class="o">&lt;</span> <span class="n">total_bytes</span><span class="p">:</span>
             <span class="c"># Construct the range header.</span>
-            <span class="n">data</span> <span class="o">=</span> <span class="n">fh</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">CHUNK_SIZE</span><span class="p">)</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">file_obj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">CHUNK_SIZE</span><span class="p">)</span>
             <span class="n">chunk_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
             <span class="n">start</span> <span class="o">=</span> <span class="n">bytes_uploaded</span>
@@ -354,37 +386,55 @@
                 <span class="s">&#39;Content-Range&#39;</span><span class="p">:</span> <span class="s">&#39;bytes </span><span class="si">%d</span><span class="s">-</span><span class="si">%d</span><span class="s">/</span><span class="si">%d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">total_bytes</span><span class="p">),</span>
             <span class="p">}</span>
 
-            <span class="n">response</span><span class="p">,</span> <span class="n">content</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">make_request</span><span class="p">(</span>
+            <span class="n">response</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">make_request</span><span class="p">(</span>
                 <span class="n">content_type</span><span class="o">=</span><span class="s">&#39;text/plain&#39;</span><span class="p">,</span>
                 <span class="n">method</span><span class="o">=</span><span class="s">&#39;POST&#39;</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">upload_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
 
             <span class="n">bytes_uploaded</span> <span class="o">+=</span> <span class="n">chunk_size</span>
-</div>
-<div class="viewcode-block" id="Key.set_contents_from_filename"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.set_contents_from_filename">[docs]</a>    <span class="k">def</span> <span class="nf">set_contents_from_filename</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Open a path and set this key&#39;s contents to the content of that file.</span>
+
+    <span class="c"># NOTE: Alias for boto-like API.</span></div>
+    <span class="n">set_contents_from_file</span> <span class="o">=</span> <span class="n">upload_from_file</span>
+
+<div class="viewcode-block" id="Key.upload_from_filename"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.upload_from_filename">[docs]</a>    <span class="k">def</span> <span class="nf">upload_from_filename</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Upload this key&#39;s contents from the content of f named file.</span>
+
+<span class="sd">        .. note::</span>
+
+<span class="sd">           The effect of uploading to an existing key depends on the</span>
+<span class="sd">           &quot;versioning&quot; and &quot;lifecycle&quot; policies defined on the key&#39;s</span>
+<span class="sd">           bucket.  In the absence of those policies, upload will</span>
+<span class="sd">           overwrite any existing contents.</span>
+
+<span class="sd">           See the `object versioning</span>
+<span class="sd">           &lt;https://cloud.google.com/storage/docs/object-versioning&gt;`_ and</span>
+<span class="sd">           `lifecycle &lt;https://cloud.google.com/storage/docs/lifecycle&gt;`_</span>
+<span class="sd">           API documents for details.</span>
 
 <span class="sd">        :type filename: string</span>
 <span class="sd">        :param filename: The path to the file.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
         <span class="n">content_type</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">mimetypes</span><span class="o">.</span><span class="n">guess_type</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
 
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">set_contents_from_file</span><span class="p">(</span><span class="n">fh</span><span class="p">,</span> <span class="n">content_type</span><span class="o">=</span><span class="n">content_type</span><span class="p">)</span>
-</div>
-<div class="viewcode-block" id="Key.set_contents_from_string"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.set_contents_from_string">[docs]</a>    <span class="k">def</span> <span class="nf">set_contents_from_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">content_type</span><span class="o">=</span><span class="s">&#39;text/plain&#39;</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Sets the contents of this key to the provided string.</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">upload_from_file</span><span class="p">(</span><span class="n">file_obj</span><span class="p">,</span> <span class="n">content_type</span><span class="o">=</span><span class="n">content_type</span><span class="p">)</span>
 
-<span class="sd">        You can use this method to quickly set the value of a key::</span>
+    <span class="c"># NOTE: Alias for boto-like API.</span></div>
+    <span class="n">set_contents_from_filename</span> <span class="o">=</span> <span class="n">upload_from_filename</span>
 
-<span class="sd">          &gt;&gt;&gt; from gcloud import storage</span>
-<span class="sd">          &gt;&gt;&gt; connection = storage.get_connection(project, email, key_path)</span>
-<span class="sd">          &gt;&gt;&gt; bucket = connection.get_bucket(bucket_name)</span>
-<span class="sd">          &gt;&gt;&gt; key = bucket.new_key(&#39;my_text_file.txt&#39;)</span>
-<span class="sd">          &gt;&gt;&gt; key.set_contents_from_string(&#39;This is the contents of my file!&#39;)</span>
+<div class="viewcode-block" id="Key.upload_from_string"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.upload_from_string">[docs]</a>    <span class="k">def</span> <span class="nf">upload_from_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">content_type</span><span class="o">=</span><span class="s">&#39;text/plain&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Upload contents of this key from the provided string.</span>
 
-<span class="sd">        Under the hood this is using a string buffer</span>
-<span class="sd">        and calling :func:`gcloud.storage.key.Key.set_contents_from_file`.</span>
+<span class="sd">        .. note::</span>
+
+<span class="sd">           The effect of uploading to an existing key depends on the</span>
+<span class="sd">           &quot;versioning&quot; and &quot;lifecycle&quot; policies defined on the key&#39;s</span>
+<span class="sd">           bucket.  In the absence of those policies, upload will</span>
+<span class="sd">           overwrite any existing contents.</span>
+
+<span class="sd">           See the `object versioning</span>
+<span class="sd">           &lt;https://cloud.google.com/storage/docs/object-versioning&gt;`_ and</span>
+<span class="sd">           `lifecycle &lt;https://cloud.google.com/storage/docs/lifecycle&gt;`_</span>
+<span class="sd">           API documents for details.</span>
 
 <span class="sd">        :type data: string</span>
 <span class="sd">        :param data: The data to store in this key.</span>
@@ -392,181 +442,378 @@
 <span class="sd">        :rtype: :class:`Key`</span>
 <span class="sd">        :returns: The updated Key object.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
         <span class="n">string_buffer</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
         <span class="n">string_buffer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">set_contents_from_file</span><span class="p">(</span><span class="n">fh</span><span class="o">=</span><span class="n">string_buffer</span><span class="p">,</span> <span class="n">rewind</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
-                                    <span class="n">size</span><span class="o">=</span><span class="n">string_buffer</span><span class="o">.</span><span class="n">len</span><span class="p">,</span>
-                                    <span class="n">content_type</span><span class="o">=</span><span class="n">content_type</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">upload_from_file</span><span class="p">(</span><span class="n">file_obj</span><span class="o">=</span><span class="n">string_buffer</span><span class="p">,</span> <span class="n">rewind</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                              <span class="n">size</span><span class="o">=</span><span class="n">string_buffer</span><span class="o">.</span><span class="n">len</span><span class="p">,</span>
+                              <span class="n">content_type</span><span class="o">=</span><span class="n">content_type</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span>
-</div>
-<div class="viewcode-block" id="Key.has_metadata"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.has_metadata">[docs]</a>    <span class="k">def</span> <span class="nf">has_metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Check if metadata is available locally.</span>
 
-<span class="sd">        :type field: string</span>
-<span class="sd">        :param field: (optional) the particular field to check for.</span>
+    <span class="c"># NOTE: Alias for boto-like API.</span></div>
+    <span class="n">set_contents_from_string</span> <span class="o">=</span> <span class="n">upload_from_string</span>
 
-<span class="sd">        :rtype: bool</span>
-<span class="sd">        :returns: Whether metadata is available locally.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">False</span>
-        <span class="k">elif</span> <span class="n">field</span> <span class="ow">and</span> <span class="n">field</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">False</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">True</span>
-</div>
-<div class="viewcode-block" id="Key.reload_metadata"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.reload_metadata">[docs]</a>    <span class="k">def</span> <span class="nf">reload_metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">full</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Reload metadata from Cloud Storage.</span>
-
-<span class="sd">        :type full: bool</span>
-<span class="sd">        :param full: If True, loads all data (include ACL data).</span>
-
-<span class="sd">        :rtype: :class:`Key`</span>
-<span class="sd">        :returns: The key you just reloaded data for.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="n">projection</span> <span class="o">=</span> <span class="s">&#39;full&#39;</span> <span class="k">if</span> <span class="n">full</span> <span class="k">else</span> <span class="s">&#39;noAcl&#39;</span>
-        <span class="n">query_params</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;projection&#39;</span><span class="p">:</span> <span class="n">projection</span><span class="p">}</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">api_request</span><span class="p">(</span>
-            <span class="n">method</span><span class="o">=</span><span class="s">&#39;GET&#39;</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">,</span> <span class="n">query_params</span><span class="o">=</span><span class="n">query_params</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span>
-</div>
-<div class="viewcode-block" id="Key.get_metadata"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.get_metadata">[docs]</a>    <span class="k">def</span> <span class="nf">get_metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get all metadata or a specific field.</span>
-
-<span class="sd">        If you request a field that isn&#39;t available,</span>
-<span class="sd">        and that field can be retrieved by refreshing data</span>
-<span class="sd">        from Cloud Storage,</span>
-<span class="sd">        this method will reload the data using</span>
-<span class="sd">        :func:`Key.reload_metadata`.</span>
-
-<span class="sd">        :type field: string</span>
-<span class="sd">        :param field: (optional) A particular field to retrieve from metadata.</span>
-
-<span class="sd">        :type default: anything</span>
-<span class="sd">        :param default: The value to return if the field provided wasn&#39;t found.</span>
-
-<span class="sd">        :rtype: dict or anything</span>
-<span class="sd">        :returns: All metadata or the value of the specific field.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">has_metadata</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="n">field</span><span class="p">):</span>
-            <span class="n">full</span> <span class="o">=</span> <span class="p">(</span><span class="n">field</span> <span class="ow">and</span> <span class="n">field</span> <span class="o">==</span> <span class="s">&#39;acl&#39;</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">reload_metadata</span><span class="p">(</span><span class="n">full</span><span class="o">=</span><span class="n">full</span><span class="p">)</span>
-
-        <span class="k">if</span> <span class="n">field</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span>
-</div>
-<div class="viewcode-block" id="Key.patch_metadata"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.patch_metadata">[docs]</a>    <span class="k">def</span> <span class="nf">patch_metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">metadata</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Update particular fields of this key&#39;s metadata.</span>
-
-<span class="sd">        This method will only update the fields provided</span>
-<span class="sd">        and will not touch the other fields.</span>
-
-<span class="sd">        It will also reload the metadata locally</span>
-<span class="sd">        based on the servers response.</span>
-
-<span class="sd">        :type metadata: dict</span>
-<span class="sd">        :param metadata: The dictionary of values to update.</span>
-
-<span class="sd">        :rtype: :class:`Key`</span>
-<span class="sd">        :returns: The current key.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">api_request</span><span class="p">(</span>
-            <span class="n">method</span><span class="o">=</span><span class="s">&#39;PATCH&#39;</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">metadata</span><span class="p">,</span>
-            <span class="n">query_params</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;projection&#39;</span><span class="p">:</span> <span class="s">&#39;full&#39;</span><span class="p">})</span>
-        <span class="k">return</span> <span class="bp">self</span>
-</div>
-<div class="viewcode-block" id="Key.reload_acl"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.reload_acl">[docs]</a>    <span class="k">def</span> <span class="nf">reload_acl</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Reload the ACL data from Cloud Storage.</span>
-
-<span class="sd">        :rtype: :class:`Key`</span>
-<span class="sd">        :returns: The current key.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="bp">self</span><span class="o">.</span><span class="n">acl</span> <span class="o">=</span> <span class="n">ObjectACL</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
-
-        <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_metadata</span><span class="p">(</span><span class="s">&#39;acl&#39;</span><span class="p">,</span> <span class="p">[]):</span>
-            <span class="n">entity</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">acl</span><span class="o">.</span><span class="n">entity_from_dict</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">acl</span><span class="o">.</span><span class="n">add_entity</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span>
-
-        <span class="k">return</span> <span class="bp">self</span>
-</div>
-<div class="viewcode-block" id="Key.get_acl"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.get_acl">[docs]</a>    <span class="k">def</span> <span class="nf">get_acl</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Get ACL metadata as a :class:`gcloud.storage.acl.ObjectACL` object.</span>
-
-<span class="sd">        :rtype: :class:`gcloud.storage.acl.ObjectACL`</span>
-<span class="sd">        :returns: An ACL object for the current key.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">acl</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">reload_acl</span><span class="p">()</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">acl</span>
-</div>
-<div class="viewcode-block" id="Key.save_acl"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.save_acl">[docs]</a>    <span class="k">def</span> <span class="nf">save_acl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">acl</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Save the ACL data for this key.</span>
-
-<span class="sd">        :type acl: :class:`gcloud.storage.acl.ACL`</span>
-<span class="sd">        :param acl: The ACL object to save.</span>
-<span class="sd">                    If left blank, this will save the ACL</span>
-<span class="sd">                    set locally on the key.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="c"># We do things in this weird way because [] and None</span>
-        <span class="c"># both evaluate to False, but mean very different things.</span>
-        <span class="k">if</span> <span class="n">acl</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
-            <span class="n">acl</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">acl</span>
-
-        <span class="k">if</span> <span class="n">acl</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">self</span>
-
-        <span class="bp">self</span><span class="o">.</span><span class="n">patch_metadata</span><span class="p">({</span><span class="s">&#39;acl&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">acl</span><span class="p">)})</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">reload_acl</span><span class="p">()</span>
-        <span class="k">return</span> <span class="bp">self</span>
-</div>
-<div class="viewcode-block" id="Key.clear_acl"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.clear_acl">[docs]</a>    <span class="k">def</span> <span class="nf">clear_acl</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Remove all ACL rules from the key.</span>
-
-<span class="sd">        Note that this won&#39;t actually remove *ALL* the rules,</span>
-<span class="sd">        but it will remove all the non-default rules.</span>
-<span class="sd">        In short,</span>
-<span class="sd">        you&#39;ll still have access</span>
-<span class="sd">        to a key that you created</span>
-<span class="sd">        even after you clear ACL rules</span>
-<span class="sd">        with this method.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">save_acl</span><span class="p">(</span><span class="n">acl</span><span class="o">=</span><span class="p">[])</span>
-</div>
-<div class="viewcode-block" id="Key.make_public"><a class="viewcode-back" href="../../../storage-api.html#gcloud.storage.key.Key.make_public">[docs]</a>    <span class="k">def</span> <span class="nf">make_public</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Key.make_public"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.make_public">[docs]</a>    <span class="k">def</span> <span class="nf">make_public</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Make this key public giving all users read access.</span>
 
-<span class="sd">        :rtype: :class:`Key`</span>
-<span class="sd">        :returns: The current key.</span>
+<span class="sd">        :returns: The current object.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">acl</span><span class="o">.</span><span class="n">all</span><span class="p">()</span><span class="o">.</span><span class="n">grant_read</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">acl</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span>
+</div>
+    <span class="n">cache_control</span> <span class="o">=</span> <span class="n">_scalar_property</span><span class="p">(</span><span class="s">&#39;cacheControl&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;HTTP &#39;Cache-Control&#39; header for this object.</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">get_acl</span><span class="p">()</span><span class="o">.</span><span class="n">all</span><span class="p">()</span><span class="o">.</span><span class="n">grant_read</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">save_acl</span><span class="p">()</span>
-        <span class="k">return</span> <span class="bp">self</span></div></div>
+<span class="sd">    See: https://tools.ietf.org/html/rfc7234#section-5.2 and</span>
+<span class="sd">         https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">content_disposition</span> <span class="o">=</span> <span class="n">_scalar_property</span><span class="p">(</span><span class="s">&#39;contentDisposition&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;HTTP &#39;Content-Disposition&#39; header for this object.</span>
+
+<span class="sd">    See: https://tools.ietf.org/html/rfc6266 and</span>
+<span class="sd">            https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">content_encoding</span> <span class="o">=</span> <span class="n">_scalar_property</span><span class="p">(</span><span class="s">&#39;contentEncoding&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;HTTP &#39;Content-Encoding&#39; header for this object.</span>
+
+<span class="sd">    See: https://tools.ietf.org/html/rfc7231#section-3.1.2.2 and</span>
+<span class="sd">            https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">content_language</span> <span class="o">=</span> <span class="n">_scalar_property</span><span class="p">(</span><span class="s">&#39;contentLanguage&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;HTTP &#39;Content-Language&#39; header for this object.</span>
+
+<span class="sd">    See: http://tools.ietf.org/html/bcp47 and</span>
+<span class="sd">            https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">content_type</span> <span class="o">=</span> <span class="n">_scalar_property</span><span class="p">(</span><span class="s">&#39;contentType&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;HTTP &#39;Content-Type&#39; header for this object.</span>
+
+<span class="sd">    See: https://tools.ietf.org/html/rfc2616#section-14.17 and</span>
+<span class="sd">            https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">crc32c</span> <span class="o">=</span> <span class="n">_scalar_property</span><span class="p">(</span><span class="s">&#39;crc32c&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;CRC32C checksum for this object.</span>
+
+<span class="sd">    See: http://tools.ietf.org/html/rfc4960#appendix-B and</span>
+<span class="sd">            https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.component_count"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.component_count">[docs]</a>    <span class="k">def</span> <span class="nf">component_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Number of underlying components that make up this object.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: integer</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;componentCount&#39;</span><span class="p">]</span>
+</div>
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.etag"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.etag">[docs]</a>    <span class="k">def</span> <span class="nf">etag</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieve the ETag for the object.</span>
+
+<span class="sd">        See: http://tools.ietf.org/html/rfc2616#section-3.11 and</span>
+<span class="sd">             https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: string</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;etag&#39;</span><span class="p">]</span>
+</div>
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.generation"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.generation">[docs]</a>    <span class="k">def</span> <span class="nf">generation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieve the generation for the object.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: integer</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;generation&#39;</span><span class="p">]</span>
+</div>
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.id"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.id">[docs]</a>    <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieve the ID for the object.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: string</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span>
+</div>
+    <span class="n">md5_hash</span> <span class="o">=</span> <span class="n">_scalar_property</span><span class="p">(</span><span class="s">&#39;md5Hash&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;MD5 hash for this object.</span>
+
+<span class="sd">    See: http://tools.ietf.org/html/rfc4960#appendix-B and</span>
+<span class="sd">            https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.media_link"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.media_link">[docs]</a>    <span class="k">def</span> <span class="nf">media_link</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieve the media download URI for the object.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: string</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;mediaLink&#39;</span><span class="p">]</span>
+</div>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieve arbitrary/application specific metadata for the object.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;metadata&#39;</span><span class="p">])</span>
+
+    <span class="nd">@metadata.setter</span>
+<div class="viewcode-block" id="Key.metadata"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.metadata">[docs]</a>    <span class="k">def</span> <span class="nf">metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Update arbitrary/application specific metadata for the object.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :type value: dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_patch_properties</span><span class="p">({</span><span class="s">&#39;metadata&#39;</span><span class="p">:</span> <span class="n">value</span><span class="p">})</span>
+</div>
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.metageneration"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.metageneration">[docs]</a>    <span class="k">def</span> <span class="nf">metageneration</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieve the metageneration for the object.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: integer</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;metageneration&#39;</span><span class="p">]</span>
+</div>
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.owner"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.owner">[docs]</a>    <span class="k">def</span> <span class="nf">owner</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieve info about the owner of the object.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: dict</span>
+<span class="sd">        :returns: mapping of owner&#39;s role/ID.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;owner&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</div>
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.self_link"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.self_link">[docs]</a>    <span class="k">def</span> <span class="nf">self_link</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieve the URI for the object.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: string</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;selfLink&#39;</span><span class="p">]</span>
+</div>
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.size"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.size">[docs]</a>    <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Size of the object,  in bytes.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: integer</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;size&#39;</span><span class="p">]</span>
+</div>
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.storage_class"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.storage_class">[docs]</a>    <span class="k">def</span> <span class="nf">storage_class</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieve the storage class for the object.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects and</span>
+<span class="sd">        https://cloud.google.com/storage/docs/durable-reduced-availability#_DRA_Bucket</span>
+
+<span class="sd">        :rtype: string</span>
+<span class="sd">        :returns: Currently one of &quot;STANDARD&quot;, &quot;DURABLE_REDUCED_AVAILABILITY&quot;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;storageClass&#39;</span><span class="p">]</span>
+</div>
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.time_deleted"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.time_deleted">[docs]</a>    <span class="k">def</span> <span class="nf">time_deleted</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieve the timestamp at which the object was deleted.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: string or None</span>
+<span class="sd">        :returns: timestamp in RFC 3339 format, or None if the object</span>
+<span class="sd">                  has a &quot;live&quot; version.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;timeDeleted&#39;</span><span class="p">)</span>
+</div>
+    <span class="nd">@property</span>
+<div class="viewcode-block" id="Key.updated"><a class="viewcode-back" href="../../../storage-keys.html#gcloud.storage.key.Key.updated">[docs]</a>    <span class="k">def</span> <span class="nf">updated</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieve the timestamp at which the object was updated.</span>
+
+<span class="sd">        See: https://cloud.google.com/storage/docs/json_api/v1/objects</span>
+
+<span class="sd">        :rtype: string</span>
+<span class="sd">        :returns: timestamp in RFC 3339 format.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">[</span><span class="s">&#39;updated&#39;</span><span class="p">]</span>
+
+</div></div>
+<span class="k">class</span> <span class="nc">_KeyDataIterator</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;An iterator listing data stored in a key.</span>
+
+<span class="sd">    You shouldn&#39;t have to use this directly, but instead should use the</span>
+<span class="sd">    helper methods on :class:`gcloud.storage.key.Key` objects.</span>
+
+<span class="sd">    :type key: :class:`gcloud.storage.key.Key`</span>
+<span class="sd">    :param key: The key from which to list data..</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">key</span> <span class="o">=</span> <span class="n">key</span>
+        <span class="c"># NOTE: These variables will be initialized by reset().</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_written</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_bytes</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">has_more_data</span><span class="p">():</span>
+            <span class="k">yield</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_next_chunk</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Resets the iterator to the beginning.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_written</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_bytes</span> <span class="o">=</span> <span class="bp">None</span>
+
+    <span class="k">def</span> <span class="nf">has_more_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Determines whether or not this iterator has more data to read.</span>
+
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :returns: Whether the iterator has more data or not.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_written</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">True</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_bytes</span><span class="p">:</span>
+            <span class="c"># self._total_bytes **should** be set by this point.</span>
+            <span class="c"># If it isn&#39;t, something is wrong.</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Size of object is unknown.&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_written</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_bytes</span>
+
+    <span class="k">def</span> <span class="nf">get_headers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets range header(s) for next chunk of data.</span>
+
+<span class="sd">        :rtype: dict</span>
+<span class="sd">        :returns: A dictionary of query parameters.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">start</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_written</span>
+        <span class="n">end</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_written</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">CHUNK_SIZE</span> <span class="o">-</span> <span class="mi">1</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_bytes</span> <span class="ow">and</span> <span class="n">end</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_bytes</span><span class="p">:</span>
+            <span class="n">end</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+
+        <span class="k">return</span> <span class="p">{</span><span class="s">&#39;Range&#39;</span><span class="p">:</span> <span class="s">&#39;bytes=</span><span class="si">%s</span><span class="s">-</span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)}</span>
+
+    <span class="k">def</span> <span class="nf">get_url</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets URL to read next chunk of data.</span>
+
+<span class="sd">        :rtype: string</span>
+<span class="sd">        :returns: A URL.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">build_api_url</span><span class="p">(</span>
+            <span class="n">path</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">path</span><span class="p">,</span> <span class="n">query_params</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;alt&#39;</span><span class="p">:</span> <span class="s">&#39;media&#39;</span><span class="p">})</span>
+
+    <span class="k">def</span> <span class="nf">get_next_chunk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the next chunk of data.</span>
+
+<span class="sd">        Uses CHUNK_SIZE to determine how much data to get.</span>
+
+<span class="sd">        :rtype: string</span>
+<span class="sd">        :returns: The chunk of data read from the key.</span>
+<span class="sd">        :raises: :class:`RuntimeError` if no more data or</span>
+<span class="sd">                 :class:`gcloud.storage.exceptions.StorageError` in the</span>
+<span class="sd">                 case of an unexpected response status code.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">has_more_data</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s">&#39;No more data in this iterator. Try resetting.&#39;</span><span class="p">)</span>
+
+        <span class="n">response</span><span class="p">,</span> <span class="n">content</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">make_request</span><span class="p">(</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&#39;GET&#39;</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_url</span><span class="p">(),</span> <span class="n">headers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_headers</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">206</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_written</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="s">&#39;content-range&#39;</span> <span class="ow">in</span> <span class="n">response</span><span class="p">:</span>
+                <span class="n">content_range</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s">&#39;content-range&#39;</span><span class="p">]</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_total_bytes</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">content_range</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
+
+            <span class="k">return</span> <span class="n">content</span>
+
+        <span class="c"># Expected a 200 or a 206. Got something else, which is unknown.</span>
+        <span class="k">raise</span> <span class="n">StorageError</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 </pre></div>
 
-          </div>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    </div>
-  </div>
-    <footer id="gc-footer" class="footer" role="contentinfo">
-    <div id="gc-copyright">
-        &copy; Copyright 2014, JJ Geewax.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b1.
-      </div>
-    </footer>
+      </section><!-- end of .content -->
+      <nav class="side-nav">
+        <ul><li><a href="../../../index.html">gcloud</a></li></ul>
+        <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-api.html">Datastore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-dataset.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-entities.html">Entities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-keys.html">Keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-transactions.html">Transactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-queries.html">Queries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../storage-api.html">Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../storage-buckets.html">Buckets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../storage-keys.html">Keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../storage-acl.html">ACL</a></li>
+</ul>
+
+        <ul class="external-links">
+          <li>
+            <a href="" title="Python on Github">
+              <img src="_static/images/icon-link-github.svg" alt="Github icon" />
+              Github
+            </a>
+          </li>
+          <li>
+            <a href="" title="Python issues on Github">
+              <img src="_static/images/icon-link-github.svg" alt="Github icon" />
+              Issues
+            </a>
+          </li>
+          <li>
+            <a href="" title="gcloud on StackOverflow">
+              <img src="_static/images/icon-link-stackoverflow.svg" alt="StackOverflow icon" />
+              gcloud
+            </a>
+          </li>
+          <li>
+            <a href="" title="Python package manager">
+              <img src="_static/images/icon-link-package-manager.svg" alt="Package Manager icon" />
+              Package Manager
+            </a>
+          </li>
+        </ul>
+      </nav><!-- end of .side-nav -->
+    </article><!-- end of .main -->
+
+    <script src="_static/js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="_static/js/plugins.js"></script>
+    <script src="_static/js/main.js"></script>
+  
   </body>
 </html>

@@ -1,103 +1,87 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>gcloud.datastore.query &mdash; gcloud 0.1 documentation</title>
+    <title>gcloud.datastore.query &mdash; gcloud 0.02.2 documentation</title>
     
-    <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/main.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/github.min.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '0.1',
+        VERSION:     '0.02.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../../_static/sidebar.js"></script>
-    <link rel="top" title="gcloud 0.1 documentation" href="../../../index.html" />
+    <script type="text/javascript" src="../../../_static/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="top" title="gcloud 0.02.2 documentation" href="../../../index.html" />
     <link rel="up" title="Module code" href="../../index.html" /> 
   </head>
-  <body role="document" class="two-column docs"><a href="https://github.com/GoogleCloudPlatform/gcloud-python"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 999;" src="_static/forkme.png" alt="Fork me on GitHub"></a>
-    <div id="sandbar">
-      <header id="gc-googlebar">
-      <a id="gc-logo" href="../../../index.html">
-        <img src="_static/cloudplatform-horizontal.png" alt="Google">
+  <body>
+    <header class="page-header fixed" role="banner">
+      <h1 class="logo">
+        <a href="index.html" title="back to home">
+          <img src="_static/images/logo.svg" alt="Google Cloud Platform" />
+          <span class="gcloud">gcloud</span>
         </a>
-        <form class="gc-search" action="search.html" method="GET">
-          <div class="searchbox" style="width: 429px;">
-            <span class="button button-blue mini">Google Cloud Python API</span>
-            <input type="hidden" name="check_keywords" value="yes">
-            <input type="hidden" name="area" value="default">
-            <input type="text" name="q" class="q" id="q" value=""
-              placeholder="Search" autocomplete="off" style="width: 263px;">
-          </div>
-          <button class="button button-blue" style="top: 0px; left: 444px;">
-          <img src="_static/search.png" alt="Search">
-        </button>
-
-        <input type="hidden" name="p" id="search_project" value="/compute">
-
-      </form>
-      </header>
-    </div>
+      </h1>
+      <nav class="main-nav">
+        <div class="nav-current">Python</div>
+        <ul class="menu">                    
+          <li>
+            <a href=" 
+https://googlecloudplatform.github.io/gcloud-node" title="Node.js docs page">
+              <img src="_static/images/icon-lang-nodejs.svg" alt="Node.js icon" class="menu-icon" />
+              Node.js
+            </a>
+          </li>
+          <li>
+            <a href="#" title="Python docs page">
+              <img src="_static/images/icon-lang-python.svg" alt="Python icon" class="menu-icon" />
+              Python
+            </a>
+          </li>
+        </ul>
+      </nav><!-- end of .main-nav -->
+    </header><!-- end of .page-header -->
     
-<div id="gc-wrapper">
-  <div id="gc-appbar">
-    <h1><a href="../../../index.html">gcloud 0.1 documentation</a></h1>
-  </div>
-    <div id="gc-main" class="main">
-      <div id="gc-sidebar" class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
+      <article class="main lang-page" role="main">
 
-            <h3>All API Docs</h3>
-            <nav class="gc-toc">
-            <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../common-api.html">Cloud Common</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../datastore-api.html">Cloud Datastore</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../datastore-getting-started.html">Getting started with Cloud Datastore</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../datastore-quickstart.html">Cloud Datastore in 10 seconds</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../getting-started.html">Getting started with gcloud</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../storage-api.html">Cloud Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../storage-getting-started.html">Getting started with Cloud Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../storage-quickstart.html">Cloud Storage in 10 seconds</a></li>
-</ul>
+      <header class="docs-header">
+        <h1 class="page-title">Python</h1>
 
-            </nav>
-            
-            
-        </div>
-      </div>
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main" id="gc-content">
-            
+          <div class="versions">
+            <span class="v-current">0.02.2</span>
+            <!--
+            <a href="versions.html" class="v-btn">
+              <img src="_static/images/icon-arrow-bullet.svg" />
+              See version History
+            </a href="versions.html">
+          </div><!-- end of .versions -->
+      </header>
+                
+      <section class="content">
+        
   <h1>Source code for gcloud.datastore.query</h1><div class="highlight"><pre>
 <span class="sd">&quot;&quot;&quot;Create / interact with gcloud datastore queries.&quot;&quot;&quot;</span>
 
 <span class="kn">import</span> <span class="nn">base64</span>
-<span class="kn">import</span> <span class="nn">copy</span>
 
 <span class="kn">from</span> <span class="nn">gcloud.datastore</span> <span class="kn">import</span> <span class="n">datastore_v1_pb2</span> <span class="k">as</span> <span class="n">datastore_pb</span>
-<span class="kn">from</span> <span class="nn">gcloud.datastore</span> <span class="kn">import</span> <span class="n">_helpers</span>
-<span class="kn">from</span> <span class="nn">gcloud.datastore.entity</span> <span class="kn">import</span> <span class="n">Entity</span>
+<span class="kn">from</span> <span class="nn">gcloud.datastore</span> <span class="kn">import</span> <span class="n">helpers</span>
 <span class="kn">from</span> <span class="nn">gcloud.datastore.key</span> <span class="kn">import</span> <span class="n">Key</span>
 
 
-<div class="viewcode-block" id="Query"><a class="viewcode-back" href="../../../datastore-api.html#gcloud.datastore.query.Query">[docs]</a><span class="k">class</span> <span class="nc">Query</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="Query"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query">[docs]</a><span class="k">class</span> <span class="nc">Query</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A Query against the Cloud Datastore.</span>
 
 <span class="sd">    This class serves as an abstraction for creating</span>
@@ -130,21 +114,26 @@
 
 <span class="sd">    :type dataset: :class:`gcloud.datastore.dataset.Dataset`</span>
 <span class="sd">    :param dataset: The dataset to query.</span>
+
+<span class="sd">    :type namespace: string or None</span>
+<span class="sd">    :param dataset: The namespace to which to restrict results.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">OPERATORS</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s">&#39;&lt;&#39;</span><span class="p">:</span> <span class="n">datastore_pb</span><span class="o">.</span><span class="n">PropertyFilter</span><span class="o">.</span><span class="n">LESS_THAN</span><span class="p">,</span>
         <span class="s">&#39;&lt;=&#39;</span><span class="p">:</span> <span class="n">datastore_pb</span><span class="o">.</span><span class="n">PropertyFilter</span><span class="o">.</span><span class="n">LESS_THAN_OR_EQUAL</span><span class="p">,</span>
-        <span class="s">&#39;&gt;&#39;</span><span class="p">:</span> <span class="n">datastore_pb</span><span class="o">.</span><span class="n">PropertyFilter</span><span class="o">.</span><span class="n">GREATER_THAN</span><span class="p">,</span>
         <span class="s">&#39;&gt;=&#39;</span><span class="p">:</span> <span class="n">datastore_pb</span><span class="o">.</span><span class="n">PropertyFilter</span><span class="o">.</span><span class="n">GREATER_THAN_OR_EQUAL</span><span class="p">,</span>
+        <span class="s">&#39;&lt;&#39;</span><span class="p">:</span> <span class="n">datastore_pb</span><span class="o">.</span><span class="n">PropertyFilter</span><span class="o">.</span><span class="n">LESS_THAN</span><span class="p">,</span>
+        <span class="s">&#39;&gt;&#39;</span><span class="p">:</span> <span class="n">datastore_pb</span><span class="o">.</span><span class="n">PropertyFilter</span><span class="o">.</span><span class="n">GREATER_THAN</span><span class="p">,</span>
         <span class="s">&#39;=&#39;</span><span class="p">:</span> <span class="n">datastore_pb</span><span class="o">.</span><span class="n">PropertyFilter</span><span class="o">.</span><span class="n">EQUAL</span><span class="p">,</span>
     <span class="p">}</span>
     <span class="sd">&quot;&quot;&quot;Mapping of operator strings and their protobuf equivalents.&quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_dataset</span> <span class="o">=</span> <span class="n">dataset</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_namespace</span> <span class="o">=</span> <span class="n">namespace</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_pb</span> <span class="o">=</span> <span class="n">datastore_pb</span><span class="o">.</span><span class="n">Query</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_cursor</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_offset</span> <span class="o">=</span> <span class="mi">0</span>
 
         <span class="k">if</span> <span class="n">kind</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">kind</span><span class="o">.</span><span class="n">add</span><span class="p">()</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">kind</span>
@@ -155,11 +144,21 @@
 <span class="sd">        :rtype: :class:`gcloud.datastore.query.Query`</span>
 <span class="sd">        :returns: a copy of &#39;self&#39;.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">clone</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-        <span class="n">clone</span><span class="o">.</span><span class="n">_dataset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dataset</span>  <span class="c"># Shallow copy the dataset.</span>
+        <span class="n">clone</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="p">(</span><span class="n">dataset</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_dataset</span><span class="p">,</span>
+                               <span class="n">namespace</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_namespace</span><span class="p">)</span>
+        <span class="n">clone</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">CopyFrom</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_pb</span><span class="p">)</span>
+        <span class="n">clone</span><span class="o">.</span><span class="n">_cursor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cursor</span>
         <span class="k">return</span> <span class="n">clone</span>
 
-<div class="viewcode-block" id="Query.to_protobuf"><a class="viewcode-back" href="../../../datastore-api.html#gcloud.datastore.query.Query.to_protobuf">[docs]</a>    <span class="k">def</span> <span class="nf">to_protobuf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Query.namespace"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.namespace">[docs]</a>    <span class="k">def</span> <span class="nf">namespace</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This query&#39;s namespace</span>
+
+<span class="sd">        :rtype: string or None</span>
+<span class="sd">        :returns: the namespace assigned to this query</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_namespace</span>
+</div>
+<div class="viewcode-block" id="Query.to_protobuf"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.to_protobuf">[docs]</a>    <span class="k">def</span> <span class="nf">to_protobuf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Convert :class:`Query` instance to :class:`.datastore_v1_pb2.Query`.</span>
 
 <span class="sd">        :rtype: :class:`gcloud.datastore.datastore_v1_pb2.Query`</span>
@@ -167,7 +166,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pb</span>
 </div>
-<div class="viewcode-block" id="Query.filter"><a class="viewcode-back" href="../../../datastore-api.html#gcloud.datastore.query.Query.filter">[docs]</a>    <span class="k">def</span> <span class="nf">filter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expression</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<div class="viewcode-block" id="Query.filter"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.filter">[docs]</a>    <span class="k">def</span> <span class="nf">filter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expression</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Filter the query based on an expression and a value.</span>
 
 <span class="sd">        This will return a clone of the current :class:`Query`</span>
@@ -208,12 +207,16 @@
         <span class="n">property_name</span><span class="p">,</span> <span class="n">operator</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span>
         <span class="n">expression</span> <span class="o">=</span> <span class="n">expression</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 
-        <span class="k">for</span> <span class="n">operator_string</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">OPERATORS</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">expression</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">operator_string</span><span class="p">):</span>
-                <span class="n">operator</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">OPERATORS</span><span class="p">[</span><span class="n">operator_string</span><span class="p">]</span>
-                <span class="n">property_name</span> <span class="o">=</span> <span class="n">expression</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">operator_string</span><span class="p">)]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="c"># Use None to split on *any* whitespace.</span>
+        <span class="n">expr_pieces</span> <span class="o">=</span> <span class="n">expression</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">expr_pieces</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">property_name</span><span class="p">,</span> <span class="n">operator</span> <span class="o">=</span> <span class="n">expr_pieces</span>
+            <span class="n">property_name</span> <span class="o">=</span> <span class="n">property_name</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">operator</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">property_name</span><span class="p">:</span>
+        <span class="c"># If no whitespace in `expression`, `operator` will be `None` and</span>
+        <span class="c"># self.OPERATORS[None] will be `None` as well.</span>
+        <span class="n">pb_op_enum</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">OPERATORS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">operator</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">pb_op_enum</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Invalid expression: &quot;</span><span class="si">%s</span><span class="s">&quot;&#39;</span> <span class="o">%</span> <span class="n">expression</span><span class="p">)</span>
 
         <span class="c"># Build a composite filter AND&#39;d together.</span>
@@ -223,13 +226,13 @@
         <span class="c"># Add the specific filter</span>
         <span class="n">property_filter</span> <span class="o">=</span> <span class="n">composite_filter</span><span class="o">.</span><span class="n">filter</span><span class="o">.</span><span class="n">add</span><span class="p">()</span><span class="o">.</span><span class="n">property_filter</span>
         <span class="n">property_filter</span><span class="o">.</span><span class="n">property</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">property_name</span>
-        <span class="n">property_filter</span><span class="o">.</span><span class="n">operator</span> <span class="o">=</span> <span class="n">operator</span>
+        <span class="n">property_filter</span><span class="o">.</span><span class="n">operator</span> <span class="o">=</span> <span class="n">pb_op_enum</span>
 
         <span class="c"># Set the value to filter on based on the type.</span>
-        <span class="n">_helpers</span><span class="o">.</span><span class="n">_set_protobuf_value</span><span class="p">(</span><span class="n">property_filter</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+        <span class="n">helpers</span><span class="o">.</span><span class="n">_set_protobuf_value</span><span class="p">(</span><span class="n">property_filter</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">clone</span>
 </div>
-<div class="viewcode-block" id="Query.ancestor"><a class="viewcode-back" href="../../../datastore-api.html#gcloud.datastore.query.Query.ancestor">[docs]</a>    <span class="k">def</span> <span class="nf">ancestor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ancestor</span><span class="p">):</span>
+<div class="viewcode-block" id="Query.ancestor"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.ancestor">[docs]</a>    <span class="k">def</span> <span class="nf">ancestor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ancestor</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Filter the query based on an ancestor.</span>
 
 <span class="sd">        This will return a clone of the current :class:`Query`</span>
@@ -296,7 +299,7 @@
 
         <span class="k">return</span> <span class="n">clone</span>
 </div>
-<div class="viewcode-block" id="Query.kind"><a class="viewcode-back" href="../../../datastore-api.html#gcloud.datastore.query.Query.kind">[docs]</a>    <span class="k">def</span> <span class="nf">kind</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">kinds</span><span class="p">):</span>
+<div class="viewcode-block" id="Query.kind"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.kind">[docs]</a>    <span class="k">def</span> <span class="nf">kind</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">kinds</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Get or set the Kind of the Query.</span>
 
 <span class="sd">        .. note::</span>
@@ -321,7 +324,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">kind</span>
 </div>
-<div class="viewcode-block" id="Query.limit"><a class="viewcode-back" href="../../../datastore-api.html#gcloud.datastore.query.Query.limit">[docs]</a>    <span class="k">def</span> <span class="nf">limit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="Query.limit"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.limit">[docs]</a>    <span class="k">def</span> <span class="nf">limit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Get or set the limit of the Query.</span>
 
 <span class="sd">        This is the maximum number of rows (Entities) to return for this Query.</span>
@@ -345,7 +348,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">limit</span>
 </div>
-<div class="viewcode-block" id="Query.dataset"><a class="viewcode-back" href="../../../datastore-api.html#gcloud.datastore.query.Query.dataset">[docs]</a>    <span class="k">def</span> <span class="nf">dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="Query.dataset"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.dataset">[docs]</a>    <span class="k">def</span> <span class="nf">dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Get or set the :class:`.datastore.dataset.Dataset` for this Query.</span>
 
 <span class="sd">        This is the dataset against which the Query will be run.</span>
@@ -370,7 +373,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dataset</span>
 </div>
-<div class="viewcode-block" id="Query.fetch"><a class="viewcode-back" href="../../../datastore-api.html#gcloud.datastore.query.Query.fetch">[docs]</a>    <span class="k">def</span> <span class="nf">fetch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="Query.fetch"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.fetch">[docs]</a>    <span class="k">def</span> <span class="nf">fetch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Executes the Query and returns all matching entities.</span>
 
 <span class="sd">        This makes an API call to the Cloud Datastore, sends the Query as a</span>
@@ -403,17 +406,25 @@
         <span class="k">if</span> <span class="n">limit</span><span class="p">:</span>
             <span class="n">clone</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="n">limit</span><span class="p">)</span>
 
-        <span class="p">(</span><span class="n">entity_pbs</span><span class="p">,</span>
-         <span class="n">end_cursor</span><span class="p">,</span>
-         <span class="n">more_results</span><span class="p">,</span>
-         <span class="n">skipped_results</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dataset</span><span class="p">()</span><span class="o">.</span><span class="n">connection</span><span class="p">()</span><span class="o">.</span><span class="n">run_query</span><span class="p">(</span>
-            <span class="n">query_pb</span><span class="o">=</span><span class="n">clone</span><span class="o">.</span><span class="n">to_protobuf</span><span class="p">(),</span> <span class="n">dataset_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dataset</span><span class="p">()</span><span class="o">.</span><span class="n">id</span><span class="p">())</span>
+        <span class="n">query_results</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dataset</span><span class="p">()</span><span class="o">.</span><span class="n">connection</span><span class="p">()</span><span class="o">.</span><span class="n">run_query</span><span class="p">(</span>
+            <span class="n">query_pb</span><span class="o">=</span><span class="n">clone</span><span class="o">.</span><span class="n">to_protobuf</span><span class="p">(),</span>
+            <span class="n">dataset_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dataset</span><span class="p">()</span><span class="o">.</span><span class="n">id</span><span class="p">(),</span>
+            <span class="n">namespace</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_namespace</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="c"># NOTE: `query_results` contains two extra values that we don&#39;t use,</span>
+        <span class="c">#       namely `more_results` and `skipped_results`. The value of</span>
+        <span class="c">#       `more_results` is unusable because it always returns an enum</span>
+        <span class="c">#       value of MORE_RESULTS_AFTER_LIMIT even if there are no more</span>
+        <span class="c">#       results. See</span>
+        <span class="c">#       https://github.com/GoogleCloudPlatform/gcloud-python/issues/280</span>
+        <span class="c">#       for discussion.</span>
+        <span class="n">entity_pbs</span><span class="p">,</span> <span class="n">end_cursor</span> <span class="o">=</span> <span class="n">query_results</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_cursor</span> <span class="o">=</span> <span class="n">end_cursor</span>
-        <span class="k">return</span> <span class="p">[</span><span class="n">Entity</span><span class="o">.</span><span class="n">from_protobuf</span><span class="p">(</span><span class="n">entity</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dataset</span><span class="p">())</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">helpers</span><span class="o">.</span><span class="n">entity_from_protobuf</span><span class="p">(</span><span class="n">entity</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dataset</span><span class="p">())</span>
                 <span class="k">for</span> <span class="n">entity</span> <span class="ow">in</span> <span class="n">entity_pbs</span><span class="p">]</span>
 </div>
-<div class="viewcode-block" id="Query.cursor"><a class="viewcode-back" href="../../../datastore-api.html#gcloud.datastore.query.Query.cursor">[docs]</a>    <span class="k">def</span> <span class="nf">cursor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Query.cursor"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.cursor">[docs]</a>    <span class="k">def</span> <span class="nf">cursor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Returns cursor ID</span>
 
 <span class="sd">        .. Caution:: Invoking this method on a query that has not yet been</span>
@@ -427,7 +438,7 @@
             <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s">&#39;No cursor&#39;</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cursor</span><span class="p">)</span>
 </div>
-<div class="viewcode-block" id="Query.with_cursor"><a class="viewcode-back" href="../../../datastore-api.html#gcloud.datastore.query.Query.with_cursor">[docs]</a>    <span class="k">def</span> <span class="nf">with_cursor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start_cursor</span><span class="p">,</span> <span class="n">end_cursor</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="Query.with_cursor"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.with_cursor">[docs]</a>    <span class="k">def</span> <span class="nf">with_cursor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start_cursor</span><span class="p">,</span> <span class="n">end_cursor</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Specifies the starting / ending positions in a query&#39;s result set.</span>
 
 <span class="sd">        :type start_cursor: bytes</span>
@@ -451,7 +462,7 @@
             <span class="n">clone</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">end_cursor</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">end_cursor</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">clone</span>
 </div>
-<div class="viewcode-block" id="Query.order"><a class="viewcode-back" href="../../../datastore-api.html#gcloud.datastore.query.Query.order">[docs]</a>    <span class="k">def</span> <span class="nf">order</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">properties</span><span class="p">):</span>
+<div class="viewcode-block" id="Query.order"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.order">[docs]</a>    <span class="k">def</span> <span class="nf">order</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">properties</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Adds a sort order to the query.</span>
 
 <span class="sd">        Sort fields will be applied in the order specified.</span>
@@ -467,31 +478,167 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">clone</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_clone</span><span class="p">()</span>
 
-        <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">properties</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">prop</span> <span class="ow">in</span> <span class="n">properties</span><span class="p">:</span>
             <span class="n">property_order</span> <span class="o">=</span> <span class="n">clone</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">order</span><span class="o">.</span><span class="n">add</span><span class="p">()</span>
 
-            <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">):</span>
-                <span class="n">property_order</span><span class="o">.</span><span class="n">property</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+            <span class="k">if</span> <span class="n">prop</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">):</span>
+                <span class="n">property_order</span><span class="o">.</span><span class="n">property</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">prop</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
                 <span class="n">property_order</span><span class="o">.</span><span class="n">direction</span> <span class="o">=</span> <span class="n">property_order</span><span class="o">.</span><span class="n">DESCENDING</span>
             <span class="k">else</span><span class="p">:</span>
-                <span class="n">property_order</span><span class="o">.</span><span class="n">property</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">p</span>
+                <span class="n">property_order</span><span class="o">.</span><span class="n">property</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">prop</span>
                 <span class="n">property_order</span><span class="o">.</span><span class="n">direction</span> <span class="o">=</span> <span class="n">property_order</span><span class="o">.</span><span class="n">ASCENDING</span>
 
+        <span class="k">return</span> <span class="n">clone</span>
+</div>
+<div class="viewcode-block" id="Query.projection"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.projection">[docs]</a>    <span class="k">def</span> <span class="nf">projection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Adds a projection to the query.</span>
+
+<span class="sd">        This is a hybrid getter / setter, used as::</span>
+
+<span class="sd">          &gt;&gt;&gt; query = Query(&#39;Person&#39;)</span>
+<span class="sd">          &gt;&gt;&gt; query.projection()  # Get the projection for this query.</span>
+<span class="sd">          []</span>
+<span class="sd">          &gt;&gt;&gt; query = query.projection([&#39;name&#39;])</span>
+<span class="sd">          &gt;&gt;&gt; query.projection()  # Get the projection for this query.</span>
+<span class="sd">          [&#39;name&#39;]</span>
+
+<span class="sd">        :type projection: sequence of strings</span>
+<span class="sd">        :param projection: Each value is a string giving the name of a</span>
+<span class="sd">                           property to be included in the projection query.</span>
+
+<span class="sd">        :rtype: :class:`Query` or `list` of strings.</span>
+<span class="sd">        :returns: If no arguments, returns the current projection.</span>
+<span class="sd">                  If a projection is provided, returns a clone of the</span>
+<span class="sd">                  :class:`Query` with that projection set.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">projection</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">prop_expr</span><span class="o">.</span><span class="n">property</span><span class="o">.</span><span class="n">name</span>
+                    <span class="k">for</span> <span class="n">prop_expr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">projection</span><span class="p">]</span>
+
+        <span class="n">clone</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_clone</span><span class="p">()</span>
+
+        <span class="c"># Reset projection values to empty.</span>
+        <span class="n">clone</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">ClearField</span><span class="p">(</span><span class="s">&#39;projection&#39;</span><span class="p">)</span>
+
+        <span class="c"># Add each name to list of projections.</span>
+        <span class="k">for</span> <span class="n">projection_name</span> <span class="ow">in</span> <span class="n">projection</span><span class="p">:</span>
+            <span class="n">clone</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">projection</span><span class="o">.</span><span class="n">add</span><span class="p">()</span><span class="o">.</span><span class="n">property</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">projection_name</span>
+        <span class="k">return</span> <span class="n">clone</span>
+</div>
+<div class="viewcode-block" id="Query.offset"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.offset">[docs]</a>    <span class="k">def</span> <span class="nf">offset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Adds offset to the query to allow pagination.</span>
+
+<span class="sd">        NOTE: Paging with cursors should be preferred to using an offset.</span>
+
+<span class="sd">        This is a hybrid getter / setter, used as::</span>
+
+<span class="sd">          &gt;&gt;&gt; query = Query(&#39;Person&#39;)</span>
+<span class="sd">          &gt;&gt;&gt; query.offset()  # Get the offset for this query.</span>
+<span class="sd">          0</span>
+<span class="sd">          &gt;&gt;&gt; query = query.offset(10)</span>
+<span class="sd">          &gt;&gt;&gt; query.offset()  # Get the offset for this query.</span>
+<span class="sd">          10</span>
+
+<span class="sd">        :type offset: non-negative integer.</span>
+<span class="sd">        :param offset: Value representing where to start a query for</span>
+<span class="sd">                       a given kind.</span>
+
+<span class="sd">        :rtype: :class:`Query` or `int`.</span>
+<span class="sd">        :returns: If no arguments, returns the current offset.</span>
+<span class="sd">                  If an offset is provided, returns a clone of the</span>
+<span class="sd">                  :class:`Query` with that offset set.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">offset</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_offset</span>
+
+        <span class="n">clone</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_clone</span><span class="p">()</span>
+        <span class="n">clone</span><span class="o">.</span><span class="n">_offset</span> <span class="o">=</span> <span class="n">offset</span>
+        <span class="n">clone</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">offset</span> <span class="o">=</span> <span class="n">offset</span>
+        <span class="k">return</span> <span class="n">clone</span>
+</div>
+<div class="viewcode-block" id="Query.group_by"><a class="viewcode-back" href="../../../datastore-queries.html#gcloud.datastore.query.Query.group_by">[docs]</a>    <span class="k">def</span> <span class="nf">group_by</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Adds a group_by to the query.</span>
+
+<span class="sd">        This is a hybrid getter / setter, used as::</span>
+
+<span class="sd">          &gt;&gt;&gt; query = Query(&#39;Person&#39;)</span>
+<span class="sd">          &gt;&gt;&gt; query.group_by()  # Get the group_by for this query.</span>
+<span class="sd">          []</span>
+<span class="sd">          &gt;&gt;&gt; query = query.group_by([&#39;name&#39;])</span>
+<span class="sd">          &gt;&gt;&gt; query.group_by()  # Get the group_by for this query.</span>
+<span class="sd">          [&#39;name&#39;]</span>
+
+<span class="sd">        :type group_by: sequence of strings</span>
+<span class="sd">        :param group_by: Each value is a string giving the name of a</span>
+<span class="sd">                         property to use to group results together.</span>
+
+<span class="sd">        :rtype: :class:`Query` or `list` of strings.</span>
+<span class="sd">        :returns: If no arguments, returns the current group_by.</span>
+<span class="sd">                  If a list of group by properties is provided, returns a clone</span>
+<span class="sd">                  of the :class:`Query` with that list of values set.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">group_by</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">prop_ref</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">prop_ref</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">group_by</span><span class="p">]</span>
+
+        <span class="n">clone</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_clone</span><span class="p">()</span>
+
+        <span class="c"># Reset group_by values to empty.</span>
+        <span class="n">clone</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">ClearField</span><span class="p">(</span><span class="s">&#39;group_by&#39;</span><span class="p">)</span>
+
+        <span class="c"># Add each name to list of group_bys.</span>
+        <span class="k">for</span> <span class="n">group_by_name</span> <span class="ow">in</span> <span class="n">group_by</span><span class="p">:</span>
+            <span class="n">clone</span><span class="o">.</span><span class="n">_pb</span><span class="o">.</span><span class="n">group_by</span><span class="o">.</span><span class="n">add</span><span class="p">()</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">group_by_name</span>
         <span class="k">return</span> <span class="n">clone</span></div></div>
 </pre></div>
 
-          </div>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    </div>
-  </div>
-    <footer id="gc-footer" class="footer" role="contentinfo">
-    <div id="gc-copyright">
-        &copy; Copyright 2014, JJ Geewax.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b1.
-      </div>
-    </footer>
+      </section><!-- end of .content -->
+      <nav class="side-nav">
+        <ul><li><a href="../../../index.html">gcloud</a></li></ul>
+        <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-api.html">Datastore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-dataset.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-entities.html">Entities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-keys.html">Keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-transactions.html">Transactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datastore-queries.html">Queries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../storage-api.html">Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../storage-buckets.html">Buckets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../storage-keys.html">Keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../storage-acl.html">ACL</a></li>
+</ul>
+
+        <ul class="external-links">
+          <li>
+            <a href="" title="Python on Github">
+              <img src="_static/images/icon-link-github.svg" alt="Github icon" />
+              Github
+            </a>
+          </li>
+          <li>
+            <a href="" title="Python issues on Github">
+              <img src="_static/images/icon-link-github.svg" alt="Github icon" />
+              Issues
+            </a>
+          </li>
+          <li>
+            <a href="" title="gcloud on StackOverflow">
+              <img src="_static/images/icon-link-stackoverflow.svg" alt="StackOverflow icon" />
+              gcloud
+            </a>
+          </li>
+          <li>
+            <a href="" title="Python package manager">
+              <img src="_static/images/icon-link-package-manager.svg" alt="Package Manager icon" />
+              Package Manager
+            </a>
+          </li>
+        </ul>
+      </nav><!-- end of .side-nav -->
+    </article><!-- end of .main -->
+
+    <script src="_static/js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="_static/js/plugins.js"></script>
+    <script src="_static/js/main.js"></script>
+  
   </body>
 </html>
